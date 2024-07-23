@@ -13,3 +13,7 @@ resource azurerm_resource_group main {
 output rando {
   value = random_string.main.result  
 }
+
+data azurerm_resource_group existing {
+  name = "rg-ep2-mr8x8gxj"
+}
