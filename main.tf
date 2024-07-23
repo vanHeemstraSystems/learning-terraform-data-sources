@@ -19,5 +19,5 @@ data azurerm_resource_group existing {
 }
 
 output rg2_id {
-  value = data.azurerm_resource_group.existing  
+  value = data.azurerm_resource_group.existing.id  
 }
