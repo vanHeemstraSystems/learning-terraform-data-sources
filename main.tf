@@ -17,3 +17,7 @@ output rando {
 data azurerm_resource_group existing {
   name = "rg-ep2-mr8x8gxj"
 }
+
+output rg2_id {
+  value = data.azurerm_resource_group.existing  
+}
